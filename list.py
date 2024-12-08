@@ -81,7 +81,15 @@ hight_in_m = [x/100 for x in hights_in_cm]
 particepants = [ x > 1.65 for x in hight_in_m ]
 print(particepants)
 
+fruits = ["apple", "banana", "cherry", "kiwi", "mango"]
+newlist = [x if x != "banana" else "orange" for x in fruits]
+print(newlist)
 
+
+# sort
+thislist = [100, 50, 65, 82, 23]
+thislist.sort()
+print(thislist)
 
 
 
