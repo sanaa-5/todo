@@ -92,7 +92,64 @@ thislist.sort()
 print(thislist)
 
 
+thislist = ["banana", "Orange", "Kiwi", "cherry"]
+# this one is sorting without considiring the alphabet
+thislist.reverse()
+print(thislist) 
 
+# this one is reversing considiring the alphabet 
+# note: normal sort will make the capital first 
+thislist.sort(reverse = True)
+print(thislist)
+
+# Sort the list descending
+thislist.sort(reverse = True)
+print(thislist)
+
+# sort the list 
+thislist = ["banana", "Orange", "Kiwi", "cherry"]
+thislist.sort(key = str.lower)
+print(thislist)
+
+# this will make a coppy where we have saperate lists
+thislist = ["apple", "banana", "cherry"]
+mylist = thislist.copy()
+thislist.append("as")
+print(mylist)
+
+# this one is like a pointer whenever we change the thislist a will change 
+a = thislist
+thislist.append("d")
+print(a)
+
+# anothor way to make a coppy 
+thislist = ["apple", "banana", "cherry"]
+mylist = list(thislist)
+print(mylist)
+
+thislist = ["apple", "banana", "cherry"]
+mylist = thislist[:]
+print(mylist)
+
+
+# JOIN 1 
+list1 = ["a", "b", "c"]
+list2 = [1, 2, 3]
+list3 = list1 + list2
+print(list3)
+
+# JOIN 2 
+list1 = ["a", "b" , "c"]
+list2 = [1, 2, 3]
+for x in list2:
+    list1.append(x)
+print(list1)
+
+# JOIN 3 
+list1 = ["a", "b" , "c"]
+list2 = [1, 2, 3]
+list1.extend(list2)
+print(list1)
 
 
 
