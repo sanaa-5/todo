@@ -17,7 +17,7 @@ print(len(thistuple))
 thistuple = ("apple",)
 print(type(thistuple))
 
-#NOT a tuple
+# NOT a tuple
 thistuple = ("apple")
 print(type(thistuple))
 
@@ -41,6 +41,7 @@ x = tuple(y)
 print(x)
 
 # add
+x = ("apple", "banana", "cherry")
 z = list(x)
 z.append("Kiwi")
 x = tuple(z)
